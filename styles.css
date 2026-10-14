@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 30px;
+}
+
+.right-side {
+    flex: 1;
+    overflow: hidden;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 70px;
+    font-variant-emoji: emoji;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-variant-emoji: emoji;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.big-button {
+    display: inline-block;
+    padding: 20px 150px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.big-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+}
